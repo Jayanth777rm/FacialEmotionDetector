@@ -8,7 +8,7 @@ function App() {
 				<div class="overlay"></div>
 				<div className="text">
 					<span aria-label="emoji" role="img" id="emoji">
-						😐
+						
 					</span>
 					You look <span id="textStatus">...</span>!
 				</div>
