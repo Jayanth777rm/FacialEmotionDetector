@@ -53,15 +53,8 @@ startVideo = () => {
 Promise.all([faceapi.nets.tinyFaceDetector.loadFromUri('./models'), faceapi.nets.faceLandmark68Net.loadFromUri('./models'), faceapi.nets.faceRecognitionNet.loadFromUri('./models'), faceapi.nets.faceExpressionNet.loadFromUri('./models')]).then(startVideo)
 
 let statusIcons = {
-	default: { emoji: '😐', color: '#02c19c' },
-	neutral: { emoji: '😐', color: '#54adad' },
-	happy: { emoji: '😀', color: '#148f77' },
-	sad: { emoji: '😥', color: '#767e7e' },
-	angry: { emoji: '😠', color: '#b64518' },
-	fearful: { emoji: '😨', color: '#90931d' },
-	disgusted: { emoji: '🤢', color: '#1a8d1a' },
-	surprised: { emoji: '😲', color: '#1230ce' },
-}
+	default: { emoji: '', color: '#02c19c' },
+	
 
 video.addEventListener('play', () => {
 	//Get dimensions from the actual video source
